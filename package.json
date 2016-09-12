@@ -1,0 +1,24 @@
+{
+  "name": "travis-test-languages",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/jbmoelker/travis-test-languages.svg)](https://travis-ci.org/jbmoelker/travis-test-languages)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbmoelker/travis-test-languages.git"
+  },
+  "keywords": [],
+  "author": "Jasper Moelker <jasper@voorhoede.nl> (https://voorhoede.nl/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbmoelker/travis-test-languages/issues"
+  },
+  "homepage": "https://github.com/jbmoelker/travis-test-languages#readme",
+  "devDependencies": {
+    "find-versions": "2.0.0",
+    "shelljs": "0.7.4"
+  }
+}
