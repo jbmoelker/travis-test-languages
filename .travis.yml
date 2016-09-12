@@ -22,6 +22,7 @@ script:
   - php test.php
   - python test.py
   - ruby test.rb
+  - bash -c "nvm use $NODE_JS_VERSION"
   - node index.js
 
 notifications:
