@@ -1,3 +1,7 @@
 #!/usr/bin/env python
 
-print "Hello from a Python script!"
+from jinja2 import Template
+template = Template('Hello from a {{ lang }} script!')
+output = template.render(lang='Python')
+
+print(output)
