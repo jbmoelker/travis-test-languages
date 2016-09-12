@@ -1,7 +1,7 @@
 language: node
 
 node_js:
-- '5.8'
+  - '5.8'
 
 install:
   - pip install --user -r requirements.txt
