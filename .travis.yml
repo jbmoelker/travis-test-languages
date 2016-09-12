@@ -2,7 +2,7 @@ sudo: false
 
 language: php
 
-php: '7.0.5'
+php: '7.0'
 
 env:
   - NODE_JS_VERSION=5.8
