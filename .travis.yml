@@ -4,7 +4,7 @@ node_js:
 - '5.8'
 
 install:
-  - pip install -r requirements.txt
+  - pip install --user -r requirements.txt
 
 script:
   - php test.php
