@@ -10,6 +10,7 @@ env:
 cache:
   directories:
     - node_modules
+    - vendor
 
 install:
   - curl -o ~/.nvm/nvm.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.0/nvm.sh # update nvm
@@ -17,6 +18,7 @@ install:
   - bash -c "source ~/.nvm/nvm.sh; nvm install $NODE_JS_VERSION; node --version"
   - npm install
   - pip install --user -r requirements.txt
+  - composer install
 
 script:
   - php test.php
