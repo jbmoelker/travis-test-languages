@@ -1,0 +1,5 @@
+package: .
+excludeDirs:
+- node_modules
+import:
+- package: github.com/flosch/pongo2

@@ -1,0 +1,6 @@
+hash: d8b64a517e5030b81a82d8bf6e36ae226a86e9f8c92ea2675ecab70b6962d4cf
+updated: 2016-09-21T21:13:37.767908978+02:00
+imports:
+- name: github.com/flosch/pongo2
+  version: 22499f94d3d56c7238591344a6902715d0b8fbbf
+testImports: []

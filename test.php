@@ -1,6 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once 'php_modules/autoload.php';
 
 $loader = new Twig_Loader_Array(array(
     'index' => 'Hello from a {{ lang }} script!',

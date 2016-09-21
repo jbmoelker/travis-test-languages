@@ -1,1 +1,1 @@
-console.log('versions:', require('./lib/versions/'));
+console.log('versions:', JSON.stringify(require('./lib/versions/'), null, 4));
