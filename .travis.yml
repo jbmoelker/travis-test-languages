@@ -14,15 +14,16 @@ cache:
     - vendor
 
 install:
-  - curl -o ~/.nvm/nvm.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.0/nvm.sh # update nvm
-  - bash -c "nvm use $NODE_JS_VERSION" || true
-  - bash -c "source ~/.nvm/nvm.sh; nvm install $NODE_JS_VERSION; node --version"
-  - npm install
-  - pip install --user -r requirements.txt
-  - composer install
+#  - curl -o ~/.nvm/nvm.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.0/nvm.sh # update nvm
+#  - bash -c "nvm use $NODE_JS_VERSION" || true
+#  - bash -c "source ~/.nvm/nvm.sh; nvm install $NODE_JS_VERSION; node --version"
+#  - npm install
+#  - pip install --user -r requirements.txt
+#  - composer install
   - curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
   - tar -xvf go1.6.linux-amd64.tar.gz
-  - export PATH=$PATH:$TRAVIS_BUILD_DIR/go/bin
+  - export GOROOT=$TRAVIS_BUILD_DIR/go
+  - export PATH=$PATH:$GOROOT/bin
   - go version
   - curl https://glide.sh/get | sh
   - glide install
@@ -30,11 +31,11 @@ install:
 
 script:
   - php test.php
-  - python test.py
-  - ruby test.rb
+#  - python test.py
+#  - ruby test.rb
   - go run test.go
-  - nvm use $NODE_JS_VERSION
-  - node index.js
+#  - nvm use $NODE_JS_VERSION
+#  - node index.js
 
 notifications:
   email: false
