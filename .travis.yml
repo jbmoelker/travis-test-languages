@@ -24,6 +24,10 @@ install:
   - tar -xvf go1.6.linux-amd64.tar.gz
   - export GOROOT=$TRAVIS_BUILD_DIR/go
   - export PATH=$PATH:$GOROOT/bin
+  - export GOPATH=$HOME
+  - echo "PWD: $PWD"
+  - echo "TRAVIS BUILD DIR: $TRAVIS_BUILD_DIR"
+  - which go
   - go version
   - curl https://glide.sh/get | sh
   - glide install
