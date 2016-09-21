@@ -1,8 +1,6 @@
 sudo: false
 
-language: php
-
-php: '7.0'
+language: bash
 
 env:
   - NODE_JS_VERSION=5.8
@@ -24,9 +22,7 @@ install:
   - tar -xvf go1.6.linux-amd64.tar.gz
   - export GOROOT=$TRAVIS_BUILD_DIR/go
   - export PATH=$PATH:$GOROOT/bin
-  - export GOPATH=$TRAVIS_BUILD_DIR
-  - echo $TRAVIS_BUILD_DIR
-  - echo $PWD
+  - export GOPATH=$TRAVIS_BUILD_DIR/go
   - which go
   - go version
   - curl https://glide.sh/get | sh
@@ -34,7 +30,7 @@ install:
 
 
 script:
-  - php test.php
+#  - php test.php
 #  - python test.py
 #  - ruby test.rb
   - go run test.go
