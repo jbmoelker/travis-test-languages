@@ -18,7 +18,7 @@ install:
 #  - npm install
 #  - pip install --user -r requirements.txt
 #  - composer install
-  - export GOPATH="${TRAVIS_BUILD_DIR}:$GOPATH"
+  - export GOPATH="${TRAVIS_BUILD_DIR}:${GOROOT}"
   - bash -c 'echo $GOPATH'
   - bash -c 'which go'
   - bash -c 'go version'
