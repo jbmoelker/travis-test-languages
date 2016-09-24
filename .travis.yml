@@ -21,7 +21,6 @@ install:
   - bash -c 'echo $GOPATH'
   - bash -c 'which go'
   - bash -c 'go version'
-  - bash -c 'which glide'
   - curl https://glide.sh/get | sh
   - glide install
   - go run hello.go
